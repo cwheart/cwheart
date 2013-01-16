@@ -10,6 +10,12 @@ var express = require('express')
 
 var app = express();
 
+var env = process.env.NODE_ENV || 'development'
+  , config = require('./config/config')[env]
+  , mongoose = require('mongoose');
+// Bootstrap db connection
+mongoose.connect(config.db);
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/app/views');
