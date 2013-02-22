@@ -6,4 +6,4 @@ var CategorySchema = new Schema({
   dscr: String
 });
 
-mongoose.model('Category', UserSchema);
+mongoose.model('Category', CategorySchema);

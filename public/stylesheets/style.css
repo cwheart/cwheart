@@ -1,3 +1,6 @@
-body {
-  padding: 40px 0 20px;
-}
+body {padding: 40px 0 20px; background-color: #fff;}
+
+.sidebar {margin-top: 20px; }
+.sidebar ul li div {padding: 5px; margin-bottom: 20px; border: 1px solid #e5e5e5;}
+.sidebar ul li h4 {text-align: center; margin: 0; padding: 5px 0; background-color: gray;}
+.span9 {margin-top: 20px;}

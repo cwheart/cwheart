@@ -1,0 +1,14 @@
+---
+applications:
+- name: cwheart
+  framework: node
+  runtime: node08
+  memory: 64M
+  instances: 1
+  url: cwheart.${target-base}
+  path: .
+  services:
+    cwheart:
+      vendor: mongodb
+      version: '2.0'
+      tier: free
